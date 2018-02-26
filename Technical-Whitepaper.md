@@ -1,6 +1,6 @@
-#Linnia Technical Paper
+# Linnia Technical Paper
 
-#Introduction
+# Introduction
 
 ## From Web 2.0 to Web 3.0
 
