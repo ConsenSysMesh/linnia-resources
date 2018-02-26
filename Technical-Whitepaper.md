@@ -1,11 +1,8 @@
 # Linnia Technical Paper
 
-
-
 *Sajida Zouarhi, Amira Bouguera, Carlos Buendia*
 
 # Introduction
-
 ## From Web 2.0 to Web 3.0
 
 Our current web (Web 2.0) is siloed and centralized. The Internet was meant to be a network technology that enables the free flow of data without bottlenecks or monopolies. In the past decade and a half, we have noticed that this vision has turned into a digital world dominated by few main players.
@@ -31,7 +28,7 @@ We will first discuss the technical context of the project by comparing Linnia a
 
 undefined
 
-Figure 2. - faces [source](https://www.pinterest.fr/pin/535013630709742486/)
+Figure 1. - faces [source](https://www.pinterest.fr/pin/535013630709742486/)
 
 **What is Identity for Linnia? A Dual Concept**
 
@@ -57,19 +54,21 @@ Keep [[3](https://backend.keep.network/whitepaper)] is an off-chain container fo
 Keep focuses on executing calculation over encrypted data, Linnia on the other hand has a broader approach where the computation represents only one part of the project and it would be interesting if Linnia could use Keep as its computation network.
 
 **Enigma**
-Enigma [[4](https://www.enigma.co/enigma_full.pdf)] is a decentralized computation platform connected to an existing blockchain. Its goal is to build privacy by design without the need of a third-party using private smart contracts. Unlike blockchains, computations and data storage are not replicated by every node in the network. Only a small subset performs each computation over different parts of the data.
-Linnia uses smart contracts in order to allow users to share their data, control access permission from outside applications and do calculation over their encrypted data. The smart contracts platform used by Enigma could be very useful for Linnia to protect user privacy.
+Enigma [[4](https://www.enigma.co/enigma_full.pdf)] is a decentralized computation platform connected to an existing blockchain. Its goal is to build privacy by design without the need of a third-party using private smart contracts. Unlike blockchains, computations and data storage are not replicated by every node in the network. Only a small subset performs each computation over different parts of the data. Linnia uses smart contracts in order to allow users to share their data, control access permission from outside applications and do calculation over their encrypted data. The smart contracts platform used by Enigma could be very useful for Linnia to protect user privacy.
 
 **Two major differences between Enigma and Keep:**
 
 Keep is working on a narrow approach rather than build a grand approach to “private smart contracts”. Keep focuses on mitigating attacks such as Sybil attacks [[5](https://en.wikipedia.org/wiki/Sybil_attack)] while Enigma risks of having a large attack surface because of the private smart contracts platform which creates bigger attack surface. 
-On the other hand, Enigma's unique technology of private smart contracts allows the code itself to be run off-chain when it needs to be private and the nodes running these private contracts to prove they have executed correctly the contract.
-On the technical side, Keep is building on-chain Random Number Generators (RNG) while both Enigma and Keep use SMPC (Secure MultiParty Computation) to query data and compute over it in a distributed way. Data will be stored using decentralized solutions for both of these projects.
+
+On the other hand, Enigma's unique technology of private smart contracts allows the code itself to be run off-chain when it needs to be private and the nodes running these private contracts to prove they have executed correctly the contract. On the technical side, Keep is building on-chain Random Number Generators (RNG) while both Enigma and Keep use SMPC (Secure MultiParty Computation) to query data and compute over it in a distributed way. Data will be stored using decentralized solutions for both of these projects.
 
 **Ocean**
 The Ocean Protocol [[6](https://oceanprotocol.com/tech-whitepaper.pdf)] includes a protocol that makes use of curation markets to categorize the value of encrypted data in order to enable a decentralized data marketplace. 
 
-Niki Williams please what should wee make a title here?
+
+### **Competitive Landscape ANALYSIS**
+
+
 
 |	|UX focus 	|Identity Centric	|Data Privacy 	|Permissions & Policies 	|Interoperability focus	|
 |---	|---	|---	|---	|---	|---	|
@@ -79,7 +78,7 @@ Niki Williams please what should wee make a title here?
 |ROCKCHAIN	|no	|no	|yes	|yes	|no	|
 |ENIGMA	|yes	|no	|yes	|no	|no	|
 |OCEAN	|no	|no	|yes	|yes	|yes	|
-|UPORT	|yes	|yes	|no	|	|yes	|
+|UPORT	|yes	|yes	|no	|no	|yes	|
 
 Figure X - A few points of comparisons for Linnia
 
@@ -267,7 +266,7 @@ Blind computation means that the data will be encrypted/obfuscated and calculati
 * First, some protocols support only one of both operations (addition/multiplication) on the ciphertext. We call these protocols  SomeWhat Homomorphic Schemes (SHE) such as RSA [[31](https://en.wikipedia.org/wiki/RSA_(cryptosystem))] (multiplicatively homomorphic) and Paillier cryptosystem [[32](https://en.wikipedia.org/wiki/Paillier_cryptosystem)] (additively homomorphic).
 * Second, those which support both operations known by Fully Homomorphic Encryption (FHE)  protocols ( for example the Ideal Lattices protocol designed by Graig Gentry  [[33](https://en.wikipedia.org/wiki/Lattice-based_cryptography)]) are very costly in terms of complexity. 
 
-Secure MultiParty Computation [[29](https://en.wikipedia.org/wiki/Secure_multi-party_computation)] is another example of cryptographic schemes which handle Blind Computation using a different approach, the data (secret) will not be encrypted. Instead, it will be divided between multiple untrusted parties in a way that makes it unreadable, each one of those parties will do computation on their share of the data and send it back to the owner in order to reconstruct it. Shamir Secret Sharing (SSS) [[35](https://en.wikipedia.org/wiki/Shamir%27s_Secret_Sharing)]  is an example of such schemes. Zero-Knowledge Protocols (ZKP)  [[36](https://en.wikipedia.org/wiki/Zero-knowledge_proof)] as well give the possibility to parties to communicate, perform computation and verify the correctness of this computation without sharing the secret like ZK-SNARKS [[37](https://github.com/zcash/mpc/blob/master/whitepaper.pdf)] for example.
+Secure MultiParty Computation [[29](https://en.wikipedia.org/wiki/Secure_multi-party_computation)] is another example of cryptographic schemes which handle Blind Computation using a different approach, the data (secret) will not be encrypted. Instead, it will be divided between multiple untrusted parties in a way that makes it unreadable, each one of those parties will do computation on their share of the data and send it back to the owner in order to reconstruct it. Shamir Secret Sharing (SSS) [[34](https://en.wikipedia.org/wiki/Shamir%27s_Secret_Sharing)]  is an example of such schemes. Zero-Knowledge Protocols (ZKP)  [[35](https://en.wikipedia.org/wiki/Zero-knowledge_proof)] as well give the possibility to parties to communicate, perform computation and verify the correctness of this computation without sharing the secret like ZK-SNARKS [[36](https://github.com/zcash/mpc/blob/master/whitepaper.pdf)] for example.
 
 The protocols listed above are all explored by Linnia in order to solve the Blind computation challenge while preserving user privacy and optimize the computation complexity. The details of  Linnia's approach will be published in future articles where research work will be discussed. 
 
@@ -279,7 +278,7 @@ Linnia uses the following consensus model to incentivize the mesh nodes to parti
 
 1. **Choose:** Linnia runs a smart contract which allows Linnia to solicit the nodes who have a good reputation profile (i.e reputation will be measured according to the level of credibility of computation they have done before) and who have enough computation power for the operation since nodes differ in resources.  Each time the node misbehaves, the reputation decreases as well as the probability that the node will be chosen for the next round.
 2. **Participate: **The chosen nodes will be notified when there is a request for computation, the request will contain the proposed price for each operation.
-3. **Commit: **The nodes which agree on the price will notify back the user by sending a response via Linnia application. The user confirms to continue the process, nodes will have to prove their commitment by putting up a security deposit in an escrow smart contract [[38](https://blog.localethereum.com/how-our-escrow-smart-contract-works/)]. The value of the security deposit will be set according to how much the operation is expensive in terms of previously price and computation power.
+3. **Commit: **The nodes which agree on the price will notify back the user by sending a response via Linnia application. The user confirms to continue the process, nodes will have to prove their commitment by putting up a security deposit in an escrow smart contract [[37](https://blog.localethereum.com/how-our-escrow-smart-contract-works/)]. The value of the security deposit will be set according to how much the operation is expensive in terms of previously price and computation power.
 4. **Prove: **Linnia will run a verification process on the blockchain in order to verify the computation correctness. The verification process will permit Linnia to distinguish between honest and dishonest nodes, the reason why it's done on and not off-chain is to keep a permanent proof in case nodes complain about being misjudged.
 5. **Reward/Punishment: **After the verification process is done, the security deposit will be given back to honest nodes and taken away from malicious ones to be distributed all over the network that participated in the computation.
 
@@ -341,8 +340,8 @@ The R&D effort is long-term oriented and aims at creating an open protocol that 
 
 1. **Confidentiality challenges: **When sharing data with untrusted data centers for computation purposes, the data must be hidden via encryption in order to maintain confidentiality and preserve user privacy. However, the task of computation on encrypted data creates other issues like the ones specified just below.
 2. **Verified computation:  **Verifiable computation is required when dealing with untrusted data centers. A malicious external server is always a risk making the problem of verifying the correctness of computation on data stored on external servers even more difficult to solve.** **
-3. **Complexity challenges:  **Previously mentioned protocols, like HE [[31](https://en.wikipedia.org/wiki/Homomorphic_encryption)] solve some confidentiality/privacy issues. However, they suffer from large computational costs. Also, when using protocols like Secret Sharing [[35](https://en.wikipedia.org/wiki/Shamir's_Secret_Sharing)]  the secret needs to be reconstructed by a certain number '**t' (**security parameter**)** of computation entities and other participants may disappear without compromising data availability. The drawback of this solution is that it needs a large volume of shares (multiplication of the initial data volume by the number of participants). ** **
-4. **Scalability challenges:** Ethereum (and many other blockchain based systems today) need validation from all the network participants in order to ensure correctness on every state change. As a result, the computational cost for every state change is considerably high compared with computational cost of a single computer. Additionally, as stated in the verifier's dilemma, it is not possible to increase the number of transactions per second without risking the possibility of inclusion of an invalid transaction inside a block. The Linnia Mesh acts as an external consensus layer, where state changes are only committed to the main consensus computer (Ethereum) as a final adjudication layer, following the direction pointed by protocols like Plasma [[39](https://plasma.io/plasma.pdf)], Lightning network [[40](https://lightning.network/lightning-network-paper.pdf)] , or TrueBit [[41](https://people.cs.uchicago.edu/~teutsch/papers/truebit.pdf)]. 
+3. **Complexity challenges:  **Previously mentioned protocols, like HE [[30](https://en.wikipedia.org/wiki/Homomorphic_encryption)] solve some confidentiality/privacy issues. However, they suffer from large computational costs. Also, when using protocols like Secret Sharing [[34](https://en.wikipedia.org/wiki/Shamir's_Secret_Sharing)]  the secret needs to be reconstructed by a certain number '**t' (**security parameter**)** of computation entities and other participants may disappear without compromising data availability. The drawback of this solution is that it needs a large volume of shares (multiplication of the initial data volume by the number of participants). ** **
+4. **Scalability challenges:** Ethereum (and many other blockchain based systems today) need validation from all the network participants in order to ensure correctness on every state change. As a result, the computational cost for every state change is considerably high compared with computational cost of a single computer. Additionally, as stated in the verifier's dilemma, it is not possible to increase the number of transactions per second without risking the possibility of inclusion of an invalid transaction inside a block. The Linnia Mesh acts as an external consensus layer, where state changes are only committed to the main consensus computer (Ethereum) as a final adjudication layer, following the direction pointed by protocols like Plasma [[38](https://plasma.io/plasma.pdf)], Lightning network [[39](https://lightning.network/lightning-network-paper.pdf)] , or TrueBit [[40](https://people.cs.uchicago.edu/~teutsch/papers/truebit.pdf)]. 
 
 
 We believe that eventually the combination of all Ethereum-based projects, that aims at solving different parts of the same puzzle in different manners, will lead to a successful transition to Web 3.0.  As such, the Linnia team is actively exploring  an array of possibilties with the projects cited in this paper. We are eager to discuss our ideas with other projects in the Ethereum ecosystem.
@@ -353,7 +352,7 @@ To that end, we encourage you to reach out to us if:
 * you want to contribute to the Linnia community (through protocol implementation, research, UX, providing feedback on this paper or other involvement)
 
 
-We have made our resources available on GitHub [[42](https://github.com/ConsenSys/Linnia-Smart-Contracts)] (our code and papers) and we will continue to do so for each release.
+We have made our resources available on GitHub [[41](https://github.com/ConsenSys/Linnia-Smart-Contracts)] (our code and papers) and we will continue to do so for each release.
 
 This soft release provides:
 
