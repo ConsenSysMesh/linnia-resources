@@ -1,4 +1,4 @@
-# Linnia Protocol's Glossary of terms (Feb 18)
+# Linnia Protocol's Glossary of terms
 
 1. **Attestation** -An attestation is a very general structure. It can be used as proof that a certain identity makes a claim about another identity. TLDR: Data signature from a trusted source
 2. **Blind computation** - Computation over encrypted data (doesn't give a third party information about what you have inside
