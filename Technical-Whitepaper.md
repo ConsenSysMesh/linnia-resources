@@ -372,7 +372,7 @@ You can contact us and get updates on the project through:
 
 ## Sources
 
-* [1]: Introductory to Linnia White Paper https://drive.google.com/file/d/16jWo8RecvJYGfiPWTxK5zgOJDSG5hKp7/view
+* [1]: Introductory to Linnia [/Introducing%20Linnia.pdf](/Introducing%20Linnia.pdf)
 * [2]: Rockchain https://rockchain.org/RockchainWhitePaper.pdf
 * [3]: Keep network https://backend.keep.network/whitepaper
 * [4]: Enigma  https://www.enigma.co/enigma_full.pdf
