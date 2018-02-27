@@ -2,7 +2,7 @@
 
 1. **Attestation** -An attestation is a very general structure. It can be used as proof that a certain identity makes a claim about another identity. TLDR: Data signature from a trusted source
 2. **Blind computation** - Computation over encrypted data (doesn't give a third party information about what you have inside
-3. **Bountry and staking schemes** - ***Bounty***: typically ETH or tokens locked in a smart contract and given to those who accomplish a certain action. ***Staking***: Locked ETH or tokens are given as a Bond to the Smart Contract that enables others to trust that the user will not behave in a way we don't want, as it would not be profitable to him. Check Proof of Stake and Payment channels for more info.
+3. **Bounty and staking schemes** - ***Bounty***: typically ETH or tokens locked in a smart contract and given to those who accomplish a certain action. ***Staking***: Locked ETH or tokens are given as a Bond to the Smart Contract that enables others to trust that the user will not behave in a way we don't want, as it would not be profitable to him. Check Proof of Stake and Payment channels for more info.
 4. **Data Exchange protocol** - A protocol to exchange data and money between different parties
 5. **Facets** - Identity-in-context.  For instance, in the context of a person's “health facet”, both medical and driving data may define a person's identity.
 6. **Game Theory** - Mathematical proof that cheating does not (always) pay
