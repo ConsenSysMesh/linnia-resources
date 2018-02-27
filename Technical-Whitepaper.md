@@ -66,7 +66,7 @@ On the other hand, Enigma's unique technology of private smart contracts allows 
 The Ocean Protocol [[6](https://oceanprotocol.com/tech-whitepaper.pdf)] includes a protocol that makes use of curation markets to categorize the value of encrypted data in order to enable a decentralized data marketplace. 
 
 
-### **Competitive Landscape ANALYSIS**
+### Competitive Landscape Analysis
 
 
 
@@ -113,7 +113,7 @@ Mains components:
 * Decentralized Storage
 * Computation mesh
 
-# **Linnia Core Components**
+# Linnia Core Components
 
 ## Attacking the problem: Seven Verticals 
 
