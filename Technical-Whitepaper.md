@@ -36,7 +36,7 @@ The *Singleton* is a technical term used to describe an object that has only one
 
 The concept of *identity* conveys a sense of *uniqueness*. The same way a person only exists as one instance of itself in the real world, so will it be in the digital world. This gives the term *Singleton* its unique power to describe identity.
 
-However, the digital world also needs to convey the idea that a person's identity might be used and revealed in different ways depending on the context. In real life, Alice might be a doctor, a Tesla car owner, and a diabetic. Depending on the context, she might be interacting with Tesla customer support, accessing her patient's file in the database of the hospital or joining a group of discussions for diabetic individuals. Each time, she will have to expose different facets of her identity. In the real world, it is simple, as no one can (yet) read one's mind. One must choose to only disclose the information one feels is relevant. To support these claims, we can often provide a physical document (a professional card, a medical certificate or a car registration document). To express the contextual nature of identity in the digital world, we use the term **facets**. Unique and manifold, just like our real-life identity, each Singleton will have an infinite number of facets.
+However, the digital world also needs to convey the idea that a person's identity might be used and revealed in different ways depending on the context. In real life, Alice might be a doctor, a Tesla car owner, and a diabetic. Depending on the context, she might be interacting with Tesla customer support, accessing her patient's file in the database of the hospital or joining a group of discussions for diabetic individuals. Each time, she will have to expose different of her identity. In the real world, it is simple, as no one can (yet) read one's mind. One must choose to only disclose the information one feels is relevant. To support these claims, we can often provide a physical document (a professional card, a medical certificate or a car registration document). To express the contextual nature of identity in the digital world, we use the term **facets**. Unique and manifold, just like our real-life identity, each Singleton will have an infinite number of facets.
 
 Linnia will be a bridge between a user *Singleton *(stored in a decentralized identity platform for self-sovereignty) and its data files (stored in a decentralized storage platform for self-management).
 
@@ -155,6 +155,7 @@ Our digital identities have many identity **facets. **A facet is a contextualize
 This further protects the privacy of other facets. Additionally, HDwallets enable revocation of child keys by just using the seed only known by the master key. The following figure illustrates the usage of HDWallets in many facets, all of them deriving from a common parent key. This provides a practical source for child keys, which are created for specific temporary user experiences. In this scenario, if any child key is leaked or lost, the parent key is still safe, and the user's singleton is not compromised.
 undefined
 
+![facets](/images/image3.png)
 *Figure 3. Example with three facets: health, mobility and photos.*
 
 ## **2. Decentralized Storage**
@@ -171,8 +172,6 @@ When a user will push thier data files via Linnia, the data will be processed th
 3. Permissions setting (none, by default),
 4. Encrypted file and its metadata are stored, for example, on IPFS,
 5. Update of the mapping table of the database in (1.) with the corresponding IPFS hash newly generated.
-
-
 
 ## **3. Contextual Attestations**
 
@@ -320,10 +319,9 @@ The Linnia team will provide updates to the community on its research regarding 
 This technical stack will be open for decentralized applications in multiple spheres to build upon, especially the ones dealing with personal data.
 To test the protocol and identifies the priorities in terms of development, discussions with the community (Q&As) will be scheduled and when the first stable protocol version will be released, a dApp Hackathon will be hosted.
 
-
 ## Roadmap
 
-undefined* * *
+![Roadmap](/images/Roadmap%20Image.jpeg)
 
 # **Conclusion and perspectives**
 
