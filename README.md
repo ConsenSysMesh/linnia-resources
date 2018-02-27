@@ -1,2 +1,5 @@
 # linnia-resources
-Various documents and resources for the linnia protocol
+
+[Introducing Linnia.pdf](/Introducing%20Linnia.pdf)
+
+[Technical-Whitepaper](Technical-Whitepaper.md)
