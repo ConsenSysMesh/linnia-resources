@@ -125,15 +125,16 @@ As an integration protocol, Linnia will leverage some of the technologies that s
 3. **Contextual attestations**: Attestations (either on-chain or off-chain) are a powerful tool which enables any Ethereum account to endorse any other piece of data. However, usability varies depending on the context. Linnia will provide a way to contextualize these attestations and make them useful to third-party applications.
 4. **Permissions and Policies**: In order to build a user-centric architecture, every critical step in terms of data governance (data acquisition, sharing, storage, and computation) needs to be compliant with the user's preferences.
 5. **Data and Metadata:** In the same way that the semantic web enabled the creation of linked data structures between completely different web applications, decentralized applications will need to provide common data formats that enable intercommunication between DApps and data reuse.  
-6. **Quality scoring (IRIS): **By creating an algorithm to calculate the underlying value of the data uploaded by the user, the protocol will enable to incentivize the users to contribute with more content to increase their IRIS score.
-7. **Data Computation:  **Applications need to execute calculation over data to run their services. However, the computation is not done locally by the data owner; instead, it is done by untrusted parties. Blind computation is a way to improve the usability of data while preserving its privacy. 
-    *[Footnote : Computation on encrypted data will be more extensively addressed in the last part of the document “Linnia Blind Computation Mesh”.]*
+6. **Quality scoring (IRIS):** By creating an algorithm to calculate the underlying value of the data uploaded by the user, the protocol will enable to incentivize the users to contribute with more content to increase their IRIS score.
+7. **Data Computation:** Applications need to execute calculation over data to run their services. However, the computation is not done locally by the data owner; instead, it is done by untrusted parties. Blind computation is a way to improve the usability of data while preserving its privacy. 
+
+*[Footnote : Computation on encrypted data will be more extensively addressed in the last part of the document “Linnia Blind Computation Mesh”.]*
 
 All of these verticals will be explained in details in the following sections.
 
 ## 1. Decentralized Identity
 
-Current Web 2.0 users create numerous accounts in different apps and websites. Each Web 2.0 context results in a new identity facet. This collection includes an identity facet for email, a shopping site, a car-sharing application and so on. Ethereum provides a single decentralized database, wherein singleton data structures can be shared among all blockchain network participants. The Linnia protocol’s reliable identity singleton solves this** identity challenge** faced by the developers of third-party apps.
+Current Web 2.0 users create numerous accounts in different apps and websites. Each Web 2.0 context results in a new identity facet. This collection includes an identity facet for email, a shopping site, a car-sharing application and so on. Ethereum provides a single decentralized database, wherein singleton data structures can be shared among all blockchain network participants. The Linnia protocol’s reliable identity singleton solves this **identity challenge** faced by the developers of third-party apps.
 
 Linnia is an **identity-centric protocol**. Identity is unique and manifold. Each user should only interact with Linnia protocol based apps with a single identity. Once claimed via Linnia, your singleton (persistent ID) will anchor and bind your self-sovereign identity to your self-managed data files via Facets (using child keys [[17](https://www.w3.org/2016/04/blockchain-workshop/interest/robles.html)]).
 
@@ -150,8 +151,8 @@ To create a sense of ownership around user's data, Linnia is going to use self-s
 
 Since all the data files (decentralized storage instances) must be linked to the facets of the user's singleton (decentralized identity instance), we will introduce here a preliminary approach to designing this system.
 
-**HDWallets** (Hierarchical Deterministic wallets) [[22](https://bitcoin.org/en/glossary/hd-protocol)] can play a significant role by creating a unique but multifaceted identity. HDWallets were created in Bitcoin (BIP32)* *as a tool to generate wallets derived from a known seed. Child keys are derived from this known parent seed. HD wallets can also be a very useful tool for identity schemes, as identity facets can be generated as child keys. 
-Our digital identities have many identity **facets. **A facet is a contextualized identity which is why each child key will be used in a different context. 
+**HDWallets** (Hierarchical Deterministic wallets) [[22](https://bitcoin.org/en/glossary/hd-protocol)] can play a significant role by creating a unique but multifaceted identity. HDWallets were created in Bitcoin **(BIP32)** as a tool to generate wallets derived from a known seed. Child keys are derived from this known parent seed. HD wallets can also be a very useful tool for identity schemes, as identity facets can be generated as child keys. 
+Our digital identities have many identity **facets.** A facet is a contextualized identity which is why each child key will be used in a different context. 
 This further protects the privacy of other facets. Additionally, HDwallets enable revocation of child keys by just using the seed only known by the master key. The following figure illustrates the usage of HDWallets in many facets, all of them deriving from a common parent key. This provides a practical source for child keys, which are created for specific temporary user experiences. In this scenario, if any child key is leaked or lost, the parent key is still safe, and the user's singleton is not compromised.
 undefined
 
@@ -186,7 +187,7 @@ Here the confirmation by a specific expert agent such as a Healthcare Provider m
 
 The Linnia-based application will have the information that this attestation has been verified by an “**expert agent” **which can trigger an action at the application level (validation of a pharmaceutical prescription, bounty claim, instant access to a specific area etc.).
 
-We can also imagine more complex scheme of attestations (with multisig) where N different types of “expert agent” are needed to verify (sign) a certain *claim *in a specific order*.*
+We can also imagine more complex scheme of attestations (with multisig) where N different types of “expert agent” are needed to verify (sign) a certain claim in a specific order.
 
 ## 4. Permissions and Policies
 
@@ -251,7 +252,7 @@ Users' self-declared data will have a lower medical provenance score but are sti
 
 ## **7. Data computation**
 
-Given the computational costs and privacy restrictions required to characterize and score each user's data, we need to run expensive algorithms. In these situations, using the current Ethereum blockchain for computation is not appropriate. To protect the user's privacy, Linnia will use protocols like sMPC [[29](https://en.wikipedia.org/wiki/Secure_multi-party_computation)] in order to do all sorts of computation on encrypted data. Deterministic off-chain computation is a current field of research in the Ethereum community. Linnia dedicates an off-chain network connected to the Main Ethereum blockchain to do all sorts of computation, this network is known as the **Linnia Computation Mesh. **The computation Mesh is composed of multiple nodes that are either third-party or Linnia vetted nodes (based on their reputation and computation capability). Collectively these nodes are responsible for handling all types of arithmetic computation and delivering the result to the user in exchange for a payment. Linnia's goal is to both preserve privacy and optimize computation time for the user via blind computation.
+Given the computational costs and privacy restrictions required to characterize and score each user's data, we need to run expensive algorithms. In these situations, using the current Ethereum blockchain for computation is not appropriate. To protect the user's privacy, Linnia will use protocols like sMPC [[29](https://en.wikipedia.org/wiki/Secure_multi-party_computation)] in order to do all sorts of computation on encrypted data. Deterministic off-chain computation is a current field of research in the Ethereum community. Linnia dedicates an off-chain network connected to the Main Ethereum blockchain to do all sorts of computation, this network is known as the **Linnia Computation Mesh.** The computation Mesh is composed of multiple nodes that are either third-party or Linnia vetted nodes (based on their reputation and computation capability). Collectively these nodes are responsible for handling all types of arithmetic computation and delivering the result to the user in exchange for a payment. Linnia's goal is to both preserve privacy and optimize computation time for the user via blind computation.
 
 **Blind data computation**
 The limited computation power of user devices and the growing number of computationally intensive tasks makes the delegation of data computation to large data centers a desirable solution. This delegation, however, creates confidentiality and privacy issues when sharing data with untrusted data centers for computation purposes. To solve these issues and preserve user privacy, the data must be hidden via encryption using Blind Computation which allows limited computational functions over encrypted data without leaking information data to third parties.
@@ -277,16 +278,16 @@ The protocols listed above are all explored by Linnia in order to solve the Blin
 Linnia uses the following consensus model to incentivize the mesh nodes to participate in the computation process by using their computation power, staying online and computing correct results.
 
 1. **Choose:** Linnia runs a smart contract which allows Linnia to solicit the nodes who have a good reputation profile (i.e reputation will be measured according to the level of credibility of computation they have done before) and who have enough computation power for the operation since nodes differ in resources.  Each time the node misbehaves, the reputation decreases as well as the probability that the node will be chosen for the next round.
-2. **Participate: **The chosen nodes will be notified when there is a request for computation, the request will contain the proposed price for each operation.
-3. **Commit: **The nodes which agree on the price will notify back the user by sending a response via Linnia application. The user confirms to continue the process, nodes will have to prove their commitment by putting up a security deposit in an escrow smart contract [[37](https://blog.localethereum.com/how-our-escrow-smart-contract-works/)]. The value of the security deposit will be set according to how much the operation is expensive in terms of previously price and computation power.
-4. **Prove: **Linnia will run a verification process on the blockchain in order to verify the computation correctness. The verification process will permit Linnia to distinguish between honest and dishonest nodes, the reason why it's done on and not off-chain is to keep a permanent proof in case nodes complain about being misjudged.
-5. **Reward/Punishment: **After the verification process is done, the security deposit will be given back to honest nodes and taken away from malicious ones to be distributed all over the network that participated in the computation.
+2. **Participate:** The chosen nodes will be notified when there is a request for computation, the request will contain the proposed price for each operation.
+3. **Commit:** The nodes which agree on the price will notify back the user by sending a response via Linnia application. The user confirms to continue the process, nodes will have to prove their commitment by putting up a security deposit in an escrow smart contract [[37](https://blog.localethereum.com/how-our-escrow-smart-contract-works/)]. The value of the security deposit will be set according to how much the operation is expensive in terms of previously price and computation power.
+4. **Prove:** Linnia will run a verification process on the blockchain in order to verify the computation correctness. The verification process will permit Linnia to distinguish between honest and dishonest nodes, the reason why it's done on and not off-chain is to keep a permanent proof in case nodes complain about being misjudged.
+5. **Reward/Punishment:** After the verification process is done, the security deposit will be given back to honest nodes and taken away from malicious ones to be distributed all over the network that participated in the computation.
 
-***Who controls the escrow contract? ***No one. The contract is filled with the fulfillment of the conditions which the user/application and the mesh nodes agreed upon and will then run automatically.
+**Who controls the escrow contract?** No one. The contract is filled with the fulfillment of the conditions which the user/application and the mesh nodes agreed upon and will then run automatically.
 
-***Who has the right to rewards/punish?* **Since the audit will be done on-chain by all the network, neither the user nor Linnia will have an upper hand to change the result and improperly hold the security deposit.
+**Who has the right to rewards/punish?** Since the audit will be done on-chain by all the network, neither the user nor Linnia will have an upper hand to change the result and improperly hold the security deposit.
 
-***Who owns the Linnia mesh?  ***It's definitely not Linnia, these nodes volunteer to use their resources for computation, Linnia will accept them and creates a reputation profile for each one of these nodes. Each time there is a computation request, nodes will be chosen according to the smart contract policies, this choice however is not up to Linnia to control.
+**Who owns the Linnia mesh?** It's definitely not Linnia, these nodes volunteer to use their resources for computation, Linnia will accept them and creates a reputation profile for each one of these nodes. Each time there is a computation request, nodes will be chosen according to the smart contract policies, this choice however is not up to Linnia to control.
 
 ## **Tokens for data exchange and computation**
 
@@ -330,18 +331,17 @@ Linnia aims at enabling all emerging decentralized technologies to interoperate 
 
 This technical paper aimed at explaining the approach that the Linnia team is taking to solve majors challenges related to these goals, especially :
 
-* A decentralized** data exchange protocol,**
+* A decentralized **data exchange protocol,**
 * A user **experience research and development effort.**
 
 ## **Challenges facing Linnia**
 
 The R&D effort is long-term oriented and aims at creating an open protocol that can be leveraged by app developers, institutions, associations and user communities to create better self-sovereign apps and dApps. However, technical obstacles make this a difficult mission to accomplish, some of the challenges that Linnia is focusing on solving in the future are:  
 
-1. **Confidentiality challenges: **When sharing data with untrusted data centers for computation purposes, the data must be hidden via encryption in order to maintain confidentiality and preserve user privacy. However, the task of computation on encrypted data creates other issues like the ones specified just below.
-2. **Verified computation:  **Verifiable computation is required when dealing with untrusted data centers. A malicious external server is always a risk making the problem of verifying the correctness of computation on data stored on external servers even more difficult to solve.** **
-3. **Complexity challenges:  **Previously mentioned protocols, like HE [[30](https://en.wikipedia.org/wiki/Homomorphic_encryption)] solve some confidentiality/privacy issues. However, they suffer from large computational costs. Also, when using protocols like Secret Sharing [[34](https://en.wikipedia.org/wiki/Shamir's_Secret_Sharing)]  the secret needs to be reconstructed by a certain number '**t' (**security parameter**)** of computation entities and other participants may disappear without compromising data availability. The drawback of this solution is that it needs a large volume of shares (multiplication of the initial data volume by the number of participants). ** **
+1. **Confidentiality challenges**: When sharing data with untrusted data centers for computation purposes, the data must be hidden via encryption in order to maintain confidentiality and preserve user privacy. However, the task of computation on encrypted data creates other issues like the ones specified just below.
+2. **Verified computation**: Verifiable computation is required when dealing with untrusted data centers. A malicious external server is always a risk making the problem of verifying the correctness of computation on data stored on external servers even more difficult to solve.
+3. **Complexity challenges**:  Previously mentioned protocols, like HE [[30](https://en.wikipedia.org/wiki/Homomorphic_encryption)] solve some confidentiality/privacy issues. However, they suffer from large computational costs. Also, when using protocols like Secret Sharing [[34](https://en.wikipedia.org/wiki/Shamir's_Secret_Sharing)]  the secret needs to be reconstructed by a certain number **'t'** (**security parameter**) of computation entities and other participants may disappear without compromising data availability. The drawback of this solution is that it needs a large volume of shares (multiplication of the initial data volume by the number of participants).
 4. **Scalability challenges:** Ethereum (and many other blockchain based systems today) need validation from all the network participants in order to ensure correctness on every state change. As a result, the computational cost for every state change is considerably high compared with computational cost of a single computer. Additionally, as stated in the verifier's dilemma, it is not possible to increase the number of transactions per second without risking the possibility of inclusion of an invalid transaction inside a block. The Linnia Mesh acts as an external consensus layer, where state changes are only committed to the main consensus computer (Ethereum) as a final adjudication layer, following the direction pointed by protocols like Plasma [[38](https://plasma.io/plasma.pdf)], Lightning network [[39](https://lightning.network/lightning-network-paper.pdf)] , or TrueBit [[40](https://people.cs.uchicago.edu/~teutsch/papers/truebit.pdf)]. 
-
 
 We believe that eventually the combination of all Ethereum-based projects, that aims at solving different parts of the same puzzle in different manners, will lead to a successful transition to Web 3.0.  As such, the Linnia team is actively exploring  an array of possibilties with the projects cited in this paper. We are eager to discuss our ideas with other projects in the Ethereum ecosystem.
 
@@ -366,7 +366,7 @@ You can contact us and get updates on the project through:
 * twitter: @LinniaProject
 * website: [www.Linnia.com](http://www.linnia.com/) 
 
-* * *
+---
 
 
 ## Sources
