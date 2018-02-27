@@ -74,11 +74,11 @@ The Ocean Protocol [[6](https://oceanprotocol.com/tech-whitepaper.pdf)] includes
 |---	|---	|---	|---	|---	|---	|
 |	|(Developers and Users experience research effort)	|(Attestions - link between decentralized identity and data files)	|(Blind computation)	|(Self-managed data files, compliance with user's regulatory framework)	|(Enabler for Web 3.0 ecosystem,  interoperability effort)	|
 |LINNIA	|yes	|yes	|yes	|yes	|yes	|
-|KEEP	|no	|no	|yes	|no	|no	|
-|ROCKCHAIN	|no	|no	|yes	|yes	|no	|
-|ENIGMA	|yes	|no	|yes	|no	|no	|
-|OCEAN	|no	|no	|yes	|yes	|yes	|
-|UPORT	|yes	|yes	|no	|no	|yes	|
+|KEEP	|-	|-	|yes	|-	|-	|
+|ROCKCHAIN	|-	|-	|yes	|yes	|-	|
+|ENIGMA	|yes	|-	|yes	|-	|-	|
+|OCEAN	|-	|-	|yes	|yes	|yes	|
+|UPORT	|yes	|yes	|-	|-	|yes	|
 
 Table One- A few points of comparisons for Linnia
 
@@ -122,7 +122,7 @@ As an integration protocol, Linnia will leverage some of the technologies that s
 
 1. **Decentralized Identity:** One of the core aims of the Linnia protocol is to bring back the control of data to the user by linking thier data files to thier decentralized identity. 
 2. **Decentralized storage:** It wouldn't be possible to let users own their data if it's  stored on a third-party server. With Linnia, the usage of decentralized storage solutions (IPFS [[10](https://ipfs.io/)] , Swarm [[11](http://swarm-gateways.net/bzz:/theswarm.eth/)]), will play a major role. 
-3. **Contextual attestations**: Attestations (either on-chain or off-chain) are a powerful tool which enables any Ethereum account to endorse any other piece of data. However, usability varies depending on the context. Linnia will provide a way to contextualize these attestations and make them useful to third-party applications.
+3. **Contextual attestations**: Attestations (either on-chain or off-chain) are a powerful tool which enables any Ethereum account to endorse any other piece of data. However, their usability varie depending on the context. Linnia will provide a way to contextualize these attestations and make them useful to third-party applications.
 4. **Permissions and Policies**: In order to build a user-centric architecture, every critical step in terms of data governance (data acquisition, sharing, storage, and computation) needs to be compliant with the user's preferences.
 5. **Data and Metadata:** In the same way that the semantic web enabled the creation of linked data structures between completely different web applications, decentralized applications will need to provide common data formats that enable intercommunication between DApps and data reuse.  
 6. **Quality scoring (IRIS):** By creating an algorithm to calculate the underlying value of the data uploaded by the user, the protocol will enable to incentivize the users to contribute with more content to increase their IRIS score.
@@ -157,6 +157,7 @@ This further protects the privacy of other facets. Additionally, HDwallets enabl
 undefined
 
 ![facets](/images/image3.png)
+
 *Figure 3. Example with three facets: health, mobility and photos.*
 
 ## 2. Decentralized Storage
