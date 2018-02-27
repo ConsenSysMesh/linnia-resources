@@ -26,7 +26,7 @@ We will first discuss the technical context of the project by comparing Linnia a
 
 ##  A Singleton Has More Than One Face
 
-undefined
+![One Face](/images/figure1.jpg)
 
 Figure 1. - faces [source](https://www.pinterest.fr/pin/535013630709742486/)
 
@@ -80,8 +80,7 @@ The Ocean Protocol [[6](https://oceanprotocol.com/tech-whitepaper.pdf)] includes
 |OCEAN	|no	|no	|yes	|yes	|yes	|
 |UPORT	|yes	|yes	|no	|no	|yes	|
 
-Figure X - A few points of comparisons for Linnia
-
+Table One- A few points of comparisons for Linnia
 
 # Technical Overview
 
@@ -101,7 +100,9 @@ Linnia is also a research-oriented project which aims at tackling some of the mo
 
 ## Overview of the architecture
 
-undefinedFigure 2. - Overview of the Linnia Architecture
+
+![overall_architecture](/images/overall_architecture.png)
+Figure 2. - Overview of the Linnia Architecture
 
 Mains components:
 
