@@ -38,7 +38,7 @@ The concept of *identity* conveys a sense of *uniqueness*. The same way a person
 
 However, the digital world also needs to convey the idea that a person's identity might be used and revealed in different ways depending on the context. In real life, Alice might be a doctor, a Tesla car owner, and a diabetic. Depending on the context, she might be interacting with Tesla customer support, accessing her patient's file in the database of the hospital or joining a group of discussions for diabetic individuals. Each time, she will have to expose different of her identity. In the real world, it is simple, as no one can (yet) read one's mind. One must choose to only disclose the information one feels is relevant. To support these claims, we can often provide a physical document (a professional card, a medical certificate or a car registration document). To express the contextual nature of identity in the digital world, we use the term **facets**. Unique and manifold, just like our real-life identity, each Singleton will have an infinite number of facets.
 
-Linnia will be a bridge between a user *Singleton *(stored in a decentralized identity platform for self-sovereignty) and its data files (stored in a decentralized storage platform for self-management).
+Linnia will be a bridge between a user *Singleton* (stored in a decentralized identity platform for self-sovereignty) and its data files (stored in a decentralized storage platform for self-management).
 
 
 ## The Landscape of Data Privacy-oriented Initiatives
@@ -159,11 +159,11 @@ undefined
 ![facets](/images/image3.png)
 *Figure 3. Example with three facets: health, mobility and photos.*
 
-## **2. Decentralized Storage**
+## 2. Decentralized Storage
 
-**IPFS** and **Swarm**** **decentralized storage solutions will play a major role in the Linnia Protocol. Here the Linnia protocol solves the limiting Web 2.0 dependency of centralized data storage infrastructure. Long-standing BitTorrent [[23](http://bittorrent.org/bittorrentecon.pdfprotocols)]  introduced peer-to-peer solutions to avoid centralization and possible content censorship. However, BitTorrent’s architecture was oriented to providing a way to share already packed resources, and not addressing problems like duplicity and granularity on content discovery. 
+**IPFS** and **Swarm** decentralized storage solutions will play a major role in the Linnia Protocol. Here the Linnia protocol solves the limiting Web 2.0 dependency of centralized data storage infrastructure. Long-standing BitTorrent [[23](http://bittorrent.org/bittorrentecon.pdfprotocols)]  introduced peer-to-peer solutions to avoid centralization and possible content censorship. However, BitTorrent’s architecture was oriented to providing a way to share already packed resources, and not addressing problems like duplicity and granularity on content discovery. 
 In the Web 3.0 decentralized era, different services are working on solving these storage issues: IPFS was one of the first movers, providing a persistent content addressed storage layer for the decentralized web.
-Also, Ethereum with its vision of providing a full decentralized stack for the web of trust started the development of **Swarm. **Swarm is a storage layer integrated with the Ethereum blockchain to provide economic incentives. Swarm's core storage component is an immutable content addressed chunkstore [[24](http://swarm-gateways.net/bzz:/theswarm.eth/ethersphere/orange-papers/1/sw%5E3.pdf)] rather than a generic DHT (distributed hash table [[25](https://en.wikipedia.org/wiki/Distributed_hash_table)]),  IPFS combines a distributed hashtable.
+Also, Ethereum with its vision of providing a full decentralized stack for the web of trust started the development of **Swarm**. **Swarm** is a storage layer integrated with the Ethereum blockchain to provide economic incentives. Swarm's core storage component is an immutable content addressed chunkstore [[24](http://swarm-gateways.net/bzz:/theswarm.eth/ethersphere/orange-papers/1/sw%5E3.pdf)] rather than a generic DHT (distributed hash table [[25](https://en.wikipedia.org/wiki/Distributed_hash_table)]), IPFS combines a distributed hashtable.
 We will need DHT for the computation part in order to divide and send data to be computed in an easy way. However, there is no native search function provided by either Swarm nor IPFS. Furthermore, data disclosure over decentralized storage is usually covered via encryption schemes. In this context, we find the same dilemma between privacy and data utility for third-parties: the less data you store in plain text, the harder it is to find any utility for the uploaded data.
 
 When a user will push thier data files via Linnia, the data will be processed this way:
@@ -174,7 +174,7 @@ When a user will push thier data files via Linnia, the data will be processed th
 4. Encrypted file and its metadata are stored, for example, on IPFS,
 5. Update of the mapping table of the database in (1.) with the corresponding IPFS hash newly generated.
 
-## **3. Contextual Attestations**
+## 3. Contextual Attestations
 
 Attestations are used in the uPort system to prove that a certain identity's claim about another one is valid. [[7](https://whitepaper.uport.me/uPort_whitepaper_DRAFT20170221.pdf)]
 Attestations, either *on-chain* or *off-chain*, are a powerful tool which enables any Ethereum account to endorse any other piece of data. 
@@ -185,7 +185,7 @@ Our attestations will then be able to have a “weight” depending on the signa
 For example, if a doctor signs an attestation in a medical context, the doctor's signature will have more weight since she can display a “medical facet”.
 Here the confirmation by a specific expert agent such as a Healthcare Provider may certify the provenance* *of the specific data (e.g. a Continuity of Care Document [[source](https://web.archive.org/web/20120320190602/http://www.corepointhealth.com/whitepapers/continuity-care-document-ccd-changing-landscape-healthcare-information-exchange)]).
 
-The Linnia-based application will have the information that this attestation has been verified by an “**expert agent” **which can trigger an action at the application level (validation of a pharmaceutical prescription, bounty claim, instant access to a specific area etc.).
+The Linnia-based application will have the information that this attestation has been verified by an **“expert agent”** which can trigger an action at the application level (validation of a pharmaceutical prescription, bounty claim, instant access to a specific area etc.).
 
 We can also imagine more complex scheme of attestations (with multisig) where N different types of “expert agent” are needed to verify (sign) a certain claim in a specific order.
 
@@ -193,13 +193,14 @@ We can also imagine more complex scheme of attestations (with multisig) where N 
 
 The Linnia protocol enables data acquisition, search, computation, and display. 
 Every function of this protocol needs to be fully compliant with users' preferences.
-Linnia's Policies and Permissions are a set of records used to make permanent a user’s preferences for sharing data (via *Permissinons) *and for managing thier data when handled by Linnia or third-parties (via *Policies*).
-For example, a user can create a permission to share their data with an application A and if its *Singleton *reveals that the user is an EU citizen, a GPDR [[27](https://en.wikipedia.org/wiki/General_Data_Protection_Regulation)] policy will be set so that the user's data are stored in a compliant way regarding the user's country regulatory framework.
+Linnia's Policies and Permissions are a set of records used to make permanent a user’s preferences for sharing data (via *Permissinons*) and for managing thier data when handled by Linnia or third-parties (via *Policies*).
+For example, a user can create a permission to share their data with an application A and if its *Singleton* reveals that the user is an EU citizen, a GPDR [[27](https://en.wikipedia.org/wiki/General_Data_Protection_Regulation)] policy will be set so that the user's data are stored in a compliant way regarding the user's country regulatory framework.
 In order to let the data flow as freely as possible, the user will be able to easily set up and manage its permissions toward third parties. Each Linnia based application needs permissions to access the user’s data expression and these permissions can be revoked at any time.
 
 The following scenario is an example of a use case of Linnia permissioning component:
 
 Let’s say that Alice decides to download Linnia based app “A”.
+
 *Initial condition*: Alice has already connected to Linnia her identity singleton through an attestation. 
 
 1. Alice agrees to let the application access some of her data by setting a permission for App “A”.
@@ -220,7 +221,7 @@ Let’s say that Alice decides to download Linnia based app “A”.
 
 5. App “A” offers Alice interesting insights and beautiful data visualizations.
 
-## **5. Data and Metadata**
+## 5. Data and Metadata
 
 Linnia must play the role of **data market maker**. An efficient data market requires data discovery and thus search. Since all user data is encrypted by default once uploaded, search is not possible unless the user makes public some standard information that we call *metadata*. Linnia will introduce contextual metadata models and might consider technologies like IPLD [[28](https://ipld.io/)] to connect different data sources. 
 
@@ -242,26 +243,26 @@ Linnia’s search infrastructure for these decentralized data storage systems in
 The value of a precious gem (e.g. a diamond) is estimated through the concept of 'carat.' Then, depending on the market, a certain amount of carats will be worth a certain amount in dollars.
 By analogy, Linnia aims to create a “value unit” for data. This requires a specific model for each domain (social data, health data, mobility data, home data etc.) but the main criteria are always the same. These criteria are chosen after consensus from the domain experts, together they create a scale that is voted by the community. The voted scale is stored on-chain to prevent any tampering and to ensure that in the future, all data that is pushed into the system will have their IRIS score calculated in the same way - Linnia doesn't decide anyone's data value. Every time a user pushes data through Linnia, its IRIS score will go up proportionally to the value of its data, the interface will display that information thus creating a basis for a gamified relationship between the user and its IRIS. This will further impact in a positive way the user experience. 
 
-To illustrate the concept of IRIS, let's take an example in Healthcare involving two main criteria: data type and data provenance. If a data “blood-lab measurement” is sent by a medical* *laboratory* *for a user, that data will have a good provenance score - the laboratory being a certified source or "expert agent" -  and thus a higher IRIS than if the user had self-declared the same data. Additionally, a “blood-lab measurement” will be worth more than “pedometer measurements” because the first data type is harder to get and more valuable in the healthcare community. These decisions will be based on a public scale built by expert discussions and consensus. 
+To illustrate the concept of IRIS, let's take an example in Healthcare involving two main criteria: data type and data provenance. If a data “blood-lab measurement” is sent by a medical *laboratory* for a user, that data will have a good provenance score - the laboratory being a certified source or "expert agent" -  and thus a higher IRIS than if the user had self-declared the same data. Additionally, a “blood-lab measurement” will be worth more than “pedometer measurements” because the first data type is harder to get and more valuable in the healthcare community. These decisions will be based on a public scale built by expert discussions and consensus. 
 
-**Connected devices can also be a source of data**
+**Connected devices can also be a source of data:**
 For connected devices, such as fitness trackers, a scale is going to be set depending on how easy it will be to cheat a particular device and generate fake data, but ultimately some certified devices will appear with various provenance scores.
 
-**Gaming the IRIS score**
+**Gaming the IRIS score:**
 Users' self-declared data will have a lower medical provenance score but are still meaningful to draw an activity profile that other applications running on top of Linnia will leverage. This information will be used by applications to feed their algorithms, to create insightful visualization tools or for scientific research that needs multiple-factor search (a specific age range, correlated with a specific treatment, a disease or a specific environment). This way, there is an incentive for the user to contribute data but no incentive for the user to lie about their data. Indeed, users can't gain much from sharing fake data as the provenance source is low (and so will be the IRIS), but they can lose a lot because they will be feeding their own applications with bad data - rendering their applications useless.
 
-## **7. Data computation**
+## 7. Data computation
 
 Given the computational costs and privacy restrictions required to characterize and score each user's data, we need to run expensive algorithms. In these situations, using the current Ethereum blockchain for computation is not appropriate. To protect the user's privacy, Linnia will use protocols like sMPC [[29](https://en.wikipedia.org/wiki/Secure_multi-party_computation)] in order to do all sorts of computation on encrypted data. Deterministic off-chain computation is a current field of research in the Ethereum community. Linnia dedicates an off-chain network connected to the Main Ethereum blockchain to do all sorts of computation, this network is known as the **Linnia Computation Mesh.** The computation Mesh is composed of multiple nodes that are either third-party or Linnia vetted nodes (based on their reputation and computation capability). Collectively these nodes are responsible for handling all types of arithmetic computation and delivering the result to the user in exchange for a payment. Linnia's goal is to both preserve privacy and optimize computation time for the user via blind computation.
 
-**Blind data computation**
+**Blind data computation:**
 The limited computation power of user devices and the growing number of computationally intensive tasks makes the delegation of data computation to large data centers a desirable solution. This delegation, however, creates confidentiality and privacy issues when sharing data with untrusted data centers for computation purposes. To solve these issues and preserve user privacy, the data must be hidden via encryption using Blind Computation which allows limited computational functions over encrypted data without leaking information data to third parties.
 
 Linnia allows both users and Linnia-based applications to request blind computation over a user's data. This means that data is never shared with these applications only the result of the computation done by the computation mesh is shared. Since this network consumes computation power in order to conduct these calculations, whoever requests the result will have to pay it. For example, a Linnia-based application needs to apply a matching algorithm for kidney transplants, this algorithm must access the donor and recipient's data to find the match. Linnia's approach would be to run the matching algorithm on encrypted data without any disclosure of private data.
 
 The Linnia Mesh allows a user and an application to communicate off-chain with only the final state logged onto the blockchain. If for some reason a dispute occurs, for example,  the user claims that it didn't give permission to the application, then the series of signed off-chain transactions can be uploaded to the blockchain for verification or dispute resolution.
 
-**Encryption Protocols**
+**Encryption Protocols:**
 Blind computation means that the data will be encrypted/obfuscated and calculation will be done over this encrypted data. Different cryptographic protocols allow us to operate over encrypted data, Homomorphic encryption (HE) [[30](https://en.wikipedia.org/wiki/Homomorphic_encryption)]  protocols are the most famous ones, yet the least practical ones. The problem with Homomorphic Encryption can be summarized as follows: 
 
 * First, some protocols support only one of both operations (addition/multiplication) on the ciphertext. We call these protocols  SomeWhat Homomorphic Schemes (SHE) such as RSA [[31](https://en.wikipedia.org/wiki/RSA_(cryptosystem))] (multiplicatively homomorphic) and Paillier cryptosystem [[32](https://en.wikipedia.org/wiki/Paillier_cryptosystem)] (additively homomorphic).
@@ -273,7 +274,7 @@ The protocols listed above are all explored by Linnia in order to solve the Blin
 
 # Linnia Blind Computation Mesh
 
-## **Computation incentive algorithm **
+## Computation incentive algorithm
 
 Linnia uses the following consensus model to incentivize the mesh nodes to participate in the computation process by using their computation power, staying online and computing correct results.
 
@@ -289,7 +290,7 @@ Linnia uses the following consensus model to incentivize the mesh nodes to parti
 
 **Who owns the Linnia mesh?** It's definitely not Linnia, these nodes volunteer to use their resources for computation, Linnia will accept them and creates a reputation profile for each one of these nodes. Each time there is a computation request, nodes will be chosen according to the smart contract policies, this choice however is not up to Linnia to control.
 
-## **Tokens for data exchange and computation**
+## Tokens for data exchange and computation
 
 In order to provide a peer-to-peer network dedicated to performing computation on encrypted data, we need to find a way to incentivize the nodes. These nodes will be paid for their computation power in Linnia tokens. Depending on who orders the computation, the payer will be different. If the user wants Linnia to provide computation results, then the payer is the user, and it needs to send a token transaction to Linnia. If the payer is a third-party that is computing on user's data, the payer will need to send a token transaction to the user to pay for data usage (before that, verification is done to ensure that these users have already accepted that their data are going to be used but not disclosed to the third-party) and to pay the Linnia peers for the computation as well. 
 If the third-party is paying for the access to the plaintext data, then the only tokens that are sent are meant to pay the user for sharing their data. In this case, no computation was is and no payment for the Linnia mesh nodes is made. 
@@ -301,7 +302,7 @@ Further detailed discussion of the role and design of a token in the Linnia ecos
 
 ## Linnia and the Ecosystem
 
-### APIs & LIBRARIES
+### APIs & libraries
 
 The Linnia protocol will nurture an ecosystem of developers tools and libraries.  With these tools, it becomes simple to handle self-managed data. Linnia strives to achieve a wide range of data interoperability including the following:
 
@@ -324,7 +325,7 @@ To test the protocol and identifies the priorities in terms of development, disc
 
 ![Roadmap](/images/Roadmap%20Image.jpeg)
 
-# **Conclusion and perspectives**
+# Conclusion and perspectives
 
 Web 2.0 was a brief interlude between the birth of the Internet and the arrival of our self- sovereignty. Web 3.0 is the future. A future in which individuals can control their data to act in their own interest.
 Linnia aims at enabling all emerging decentralized technologies to interoperate in a way that will allow the collaboration around Web 3.0 to increase, with a specific focus over user's self-managed data files.
@@ -334,7 +335,7 @@ This technical paper aimed at explaining the approach that the Linnia team is ta
 * A decentralized **data exchange protocol,**
 * A user **experience research and development effort.**
 
-## **Challenges facing Linnia**
+## Challenges facing Linnia
 
 The R&D effort is long-term oriented and aims at creating an open protocol that can be leveraged by app developers, institutions, associations and user communities to create better self-sovereign apps and dApps. However, technical obstacles make this a difficult mission to accomplish, some of the challenges that Linnia is focusing on solving in the future are:  
 
