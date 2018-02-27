@@ -371,44 +371,44 @@ You can contact us and get updates on the project through:
 
 ## Sources
 
-[1] Introductory to Linnia White Paper https://drive.google.com/file/d/16jWo8RecvJYGfiPWTxK5zgOJDSG5hKp7/view
-[2] Rockchain https://rockchain.org/RockchainWhitePaper.pdf
-[3]; Keep network https://backend.keep.network/whitepaper
-[4]: Enigma  https://www.enigma.co/enigma_full.pdf
-[5]: Sybil Attacks https://en.wikipedia.org/wiki/Sybil_attack
-[6] Ocean: https://oceanprotocol.com/tech-whitepaper.pdf
-[7]: uPort white paper https://whitepaper.uport.me/uPort_whitepaper_DRAFT20170221.pdf
-[8]: Civic https://tokensale.civic.com/CivicTokenSaleWhitePaper.pdf
-[9]: YouBase https://www.gitbook.com/book/joshrobinson/youbase/details
-[10]: IPFS [https://ipfs.io](https://ipfs.io/)
-[11]: Swarm http://swarm-gateways.net/bzz:/theswarm.eth/
-[12]: iEXEC [https://iex.ec](https://iex.ec/)
-[13]: Ethereum Blockchain [https://www.ethereum.org](https://www.ethereum.org/)
-[14]: Ethereum Yellow Paper http://gavwood.com/paper.pdf 
-[15]: FitBit  https://www.fitbit.com/home 
-[16]: MetaMask [https://metamask.io](https://metamask.io/)
-[17]: HD Keys https://www.w3.org/2016/04/blockchain-workshop/interest/robles.html
-[18]: OneName https://onename.com/
-[19]: NameCoin https://namecoin.org/
-[20]: Bitcoin Whitepaper https://bitcoin.org/bitcoin.pdf 
-[21]: Web Foundation: [https://webfoundation.org](https://webfoundation.org/)
-[22]: Bitcoin BIP Protocols https://bitcoin.org/en/glossary/hd-protocol
-[23]: BitTorrent Protocol http://bittorrent.org/bittorrentecon.pdf
-[24]: Orange Paper Swarm http://swarm-gateways.net/bzz:/theswarm.eth/ethersphere/orange-papers/1/sw%5E3.pdf
-[25]: DHT https://en.wikipedia.org/wiki/Distributed_hash_table
-[26]: PostgreSQL https://en.wikipedia.org/wiki/PostgreSQL
-[27]: GDPR https://en.wikipedia.org/wiki/General_Data_Protection_Regulation
-[28]: IPLD [https://ipld.io](https://ipld.io/)
-[29]: Secure MultyParty Computations https://en.wikipedia.org/wiki/Secure_multi-party_computation
-[30]: Homomorphic Encryption https://en.wikipedia.org/wiki/Homomorphic_encryption 
-[31]: RSA Protocol  https://en.wikipedia.org/wiki/RSA_(cryptosystem) 
-[32]: Paillier Cryptosystem https://en.wikipedia.org/wiki/Paillier_cryptosystem
-[33]: Lattice-based cryptography https://en.wikipedia.org/wiki/Lattice-based_cryptography
-[34]: Shamir Secret Sharing https://en.wikipedia.org/wiki/Shamir%27s_Secret_Sharing
-[35]: Zero Knowledge Proofs https://en.wikipedia.org/wiki/Zero-knowledge_proof
-[36]: ZK-SNARKS https://github.com/zcash/mpc/blob/master/whitepaper.pdf
-[37]: Escrow Smart Contract https://blog.localethereum.com/how-our-escrow-smart-contract-works/
-[38]: Plasma https://plasma.io/plasma.pdf
-[39]: Lightning network https://lightning.network/lightning-network-paper.pdf
-[40]: TrueBit  https://people.cs.uchicago.edu/~teutsch/papers/truebit.pdf
-[41]: Linnia Smart Contracts https://github.com/ConsenSys/Linnia-Smart-Contracts
+* [1]: Introductory to Linnia White Paper https://drive.google.com/file/d/16jWo8RecvJYGfiPWTxK5zgOJDSG5hKp7/view
+* [2]: Rockchain https://rockchain.org/RockchainWhitePaper.pdf
+* [3]: Keep network https://backend.keep.network/whitepaper
+* [4]: Enigma  https://www.enigma.co/enigma_full.pdf
+* [5]: Sybil Attacks https://en.wikipedia.org/wiki/Sybil_attack
+* [6]: Ocean: https://oceanprotocol.com/tech-whitepaper.pdf
+* [7]: uPort white paper https://whitepaper.uport.me/uPort_whitepaper_DRAFT20170221.pdf
+* [8]: Civic https://tokensale.civic.com/CivicTokenSaleWhitePaper.pdf
+* [9]: YouBase https://www.gitbook.com/book/joshrobinson/youbase/details
+* [10]: IPFS [https://ipfs.io](https://ipfs.io/)
+* [11]: Swarm http://swarm-gateways.net/bzz:/theswarm.eth/
+* [12]: iEXEC [https://iex.ec](https://iex.ec/)
+* [13]: Ethereum Blockchain [https://www.ethereum.org](https://www.ethereum.org/)
+* [14]: Ethereum Yellow Paper http://gavwood.com/paper.pdf 
+* [15]: FitBit  https://www.fitbit.com/home 
+* [16]: MetaMask [https://metamask.io](https://metamask.io/)
+* [17]: HD Keys https://www.w3.org/2016/04/blockchain-workshop/interest/robles.html
+* [18]: OneName https://onename.com/
+* [19]: NameCoin https://namecoin.org/
+* [20]: Bitcoin Whitepaper https://bitcoin.org/bitcoin.pdf 
+* [21]: Web Foundation: [https://webfoundation.org](https://webfoundation.org/)
+* [22]: Bitcoin BIP Protocols https://bitcoin.org/en/glossary/hd-protocol
+* [23]: BitTorrent Protocol http://bittorrent.org/bittorrentecon.pdf
+* [24]: Orange Paper Swarm http://swarm-gateways.net/bzz:/theswarm.eth/ethersphere/orange-papers/1/sw%5E3.pdf
+* [25]: DHT https://en.wikipedia.org/wiki/Distributed_hash_table
+* [26]: PostgreSQL https://en.wikipedia.org/wiki/PostgreSQL
+* [27]: GDPR https://en.wikipedia.org/wiki/General_Data_Protection_Regulation
+* [28]: IPLD [https://ipld.io](https://ipld.io/)
+* [29]: Secure MultyParty Computations https://en.wikipedia.org/wiki/Secure_multi-party_computation
+* [30]: Homomorphic Encryption https://en.wikipedia.org/wiki/Homomorphic_encryption 
+* [31]: RSA Protocol  https://en.wikipedia.org/wiki/RSA_(cryptosystem) 
+* [32]: Paillier Cryptosystem https://en.wikipedia.org/wiki/Paillier_cryptosystem
+* [33]: Lattice-based cryptography https://en.wikipedia.org/wiki/Lattice-based_cryptography
+* [34]: Shamir Secret Sharing https://en.wikipedia.org/wiki/Shamir%27s_Secret_Sharing
+* [35]: Zero Knowledge Proofs https://en.wikipedia.org/wiki/Zero-knowledge_proof
+* [36]: ZK-SNARKS https://github.com/zcash/mpc/blob/master/whitepaper.pdf
+* [37]: Escrow Smart Contract https://blog.localethereum.com/how-our-escrow-smart-contract-works/
+* [38]: Plasma https://plasma.io/plasma.pdf
+* [39]: Lightning network https://lightning.network/lightning-network-paper.pdf
+* [40]: TrueBit  https://people.cs.uchicago.edu/~teutsch/papers/truebit.pdf
+* [41]: Linnia Smart Contracts https://github.com/ConsenSys/Linnia-Smart-Contracts
