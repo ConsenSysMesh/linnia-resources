@@ -54,7 +54,7 @@ We use eslint.  Please run `npm run lint:sol` and `npm run lint:tests` before su
 
 #### All set!
 
-If you have any questions feel free to post them to github.com/Consensys/linnia/issues.
+If you have any questions feel free to post them to github.com/Consensys/linnia-resources/issues.
 
 Finally, if you're looking to collaborate and want to find easy tasks to start, look at the issues we marked as ["Good first issue"](https://github.com/Consensys/Linnia-Smart-Contracts/labels/good%20first%20issue).
 
