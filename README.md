@@ -8,7 +8,7 @@ If you have any questions about how the protocol works or how to get started, th
 
 [Linnia](https://consensys.github.io/linnia-homepage/) is a decentralized protocol that facilitates the secure storage and sharing of sensitive data.
 
-Want to take a deeper dive into what the Linnia Protocol is and what it stands for? Check out our [whitepaper](/introducing-linnia.png) or our [homepage](https://consensys.github.io/linnia-homepage/) for more context.
+Want to take a deeper dive into what the Linnia Protocol is and what it stands for? Check out our [whitepaper](/introducing-linnia.pdf) or our [homepage](https://consensys.github.io/linnia-homepage/) for more context.
 
 ## Public Repositories
 
@@ -33,4 +33,4 @@ Getting started building blockchain technology is tough! As with any emerging te
 
 ## Contributing
 
-Linnia prides itself on being an open source protocol. We greatly appreciate any contributions you can make to further the cause. Please reference our [contribution documentation]("./CONTRIBUTING.md") before getting started!
+Linnia prides itself on being an open source protocol. We greatly appreciate any contributions you can make to further the cause. Please reference our [contribution documentation](./CONTRIBUTING.md) before getting started!
