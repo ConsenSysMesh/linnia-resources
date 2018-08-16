@@ -39,4 +39,4 @@ Linnia prides itself on being an open source protocol. We greatly appreciate any
 
 ## What Keys Linnia Uses?
 
-Go [HERE](KEYS.md) to read more about the keys that you need to use Linnia Protocol
+Go [HERE](KEYS.md) to read more about encryption patterns and how the Linnia Protocol uses them.
