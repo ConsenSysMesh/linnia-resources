@@ -8,24 +8,28 @@ If you have any questions about how the protocol works or how to get started, th
 
 [Linnia](https://consensys.github.io/linnia-homepage/) is a decentralized protocol that facilitates the secure storage and sharing of sensitive data.
 
+[Introduction Video](https://www.youtube.com/watch?v=w0VskCpUKZ8)
+
+[Overview Blog Post](https://medium.com/linnia/linnia-f4f139a795ef)
+
 Want to take a deeper dive into what the Linnia Protocol is and what it stands for? Check out our [whitepaper](/introducing-linnia.pdf) or our [homepage](https://consensys.github.io/linnia-homepage/) for more context.
 
 ## Public Repositories
 
 #### Components
 
-| Repository                                                                        |  Description                                                        |
-| --------------------------------------------------------------------------------- | ------------------------------------------------------------------- |
-| [Linnia Smart Contracts](https://github.com/ConsenSys/Linnia-Smart-Contracts)     | Home of the Linnia Protocol Smart Contracts                       |
-| [Linnia Server](https://github.com/ConsenSys/linnia-server)                       | NodeJS server for caching events and querying records               |
-| [Linnia Box](https://github.com/ConsenSys/linnia-box)                             | React UI Starter Template that integrates smart contracts and IPFS  |
+| Repository                                                                    | Description                                                        |
+| ----------------------------------------------------------------------------- | ------------------------------------------------------------------ |
+| [Linnia Smart Contracts](https://github.com/ConsenSys/Linnia-Smart-Contracts) | Home of the Linnia Protocol Smart Contracts                        |
+| [Linnia Server](https://github.com/ConsenSys/linnia-server)                   | NodeJS server for caching events and querying records              |
+| [Linnia Box](https://github.com/ConsenSys/linnia-box)                         | React UI Starter Template that integrates smart contracts and IPFS |
 
 #### Libraries
 
-| Repository                                                                             |  NPM                                                                                                                                | Description                |
-| -------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- | -------------------------- |
-| [Linnia Smart Contracts ABIs](https://github.com/ConsenSys/Linnia-Smart-Contracts)     | [![npm link](https://img.shields.io/badge/npm-linnia--smart--contracts-blue.svg)](https://www.npmjs.com/package/@linniaprotocol/linnia-smart-contracts) | ABIs for the Linnia Smart Contracts |
-| [Linnia JS](https://github.com/ConsenSys/linnia-js)                                    | [![npm link](https://img.shields.io/badge/npm-linnia--js-blue.svg)](https://www.npmjs.com/package/@linniaprotocol/linnia-js) | JS Library to interact with the Linnia protocol |
+| Repository                                                                         | NPM                                                                                                                                                     | Description                                     |
+| ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------- |
+| [Linnia Smart Contracts ABIs](https://github.com/ConsenSys/Linnia-Smart-Contracts) | [![npm link](https://img.shields.io/badge/npm-linnia--smart--contracts-blue.svg)](https://www.npmjs.com/package/@linniaprotocol/linnia-smart-contracts) | ABIs for the Linnia Smart Contracts             |
+| [Linnia JS](https://github.com/ConsenSys/linnia-js)                                | [![npm link](https://img.shields.io/badge/npm-linnia--js-blue.svg)](https://www.npmjs.com/package/@linniaprotocol/linnia-js)                            | JS Library to interact with the Linnia protocol |
 
 ## Setting up a development environment
 
