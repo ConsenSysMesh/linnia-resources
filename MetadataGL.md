@@ -4,7 +4,7 @@
 
   - A user must consent to uploading their data with Metadata.
   - Metadata associated with something uploaded to IPFS will be permanent, searchable and public and therefore there needs to be consent.
-  - Unconsented Metadata won't be appended to Linnia Smart Contracts. 
+  - It is best that unconsented Metadata is not appended to Linnia Smart Contracts. 
   - This functionality should be at App Level and if a user does not consent then data uploaded to Linnia Protocol should be void of Metadata. 
   - Please take caution, show examples of Metadata and be completely transparent in how a user's data and Metadata are uploaded to the application. It is in the best interest of everyone involved that the privacy of the user is maintained at all times. 
 
