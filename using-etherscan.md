@@ -15,7 +15,7 @@ https://ropsten.etherscan.io/ is the version for the Ropsten testnet.
 
 Transaction Receipt Event Logs are known as *events*.
 
-Etherem smart contact *Events* act as logs during transaction execution. Etherscan has a helpful tab with Event data (see below).
+Ethereum smart contract *Events* act as logs during transaction execution. Etherscan has a helpful tab with Event data (see below).
 
 # etherscan for Linnia Events  on the Ropsten testnet 
 
