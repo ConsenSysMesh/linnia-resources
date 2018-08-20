@@ -5,7 +5,7 @@
 Etherscan is a useful third party tool that can be used to confirm testnet transactions.
 
 The following is a good general introduction to etherscan.io.
-https://www.youtube.com/watch?time_continue=449&v=7yAxcKabNNM
+https://www.youtube.com/watch?v=7yAxcKabNNM
 
 # etherscan for the Ropsten testnet 
 
