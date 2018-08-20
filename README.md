@@ -21,7 +21,6 @@ Want to take a deeper dive into what the Linnia Protocol is and what it stands f
 | Repository                                                                    | Description                                                        |
 | ----------------------------------------------------------------------------- | ------------------------------------------------------------------ |
 | [Linnia Smart Contracts](https://github.com/ConsenSys/Linnia-Smart-Contracts) | Home of the Linnia Protocol Smart Contracts                        |
-| [Linnia Server](https://github.com/ConsenSys/linnia-server)                   | NodeJS server for caching events and querying records              |
 | [Linnia Box](https://github.com/ConsenSys/linnia-box)                         | React UI Starter Template that integrates smart contracts and IPFS |
 
 #### Libraries
@@ -38,8 +37,6 @@ Getting started building blockchain technology is tough! As with any emerging te
 ## Contributing
 
 Linnia prides itself on being an open source protocol. We greatly appreciate any contributions you can make to further the cause. Please reference our [contribution documentation](./CONTRIBUTING.md) before getting started!
-
-
 
 ## What Keys Linnia Uses?
 
