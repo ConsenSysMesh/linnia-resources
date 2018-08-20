@@ -21,3 +21,4 @@ Etherem smart contact *Events* act as logs during transaction execution. Ethersc
 
 The following is an example of a *Linnia* event recorded in etherscan.
 
+![linnia Event Etherscan](linniaEventEtherscan.png)
