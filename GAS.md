@@ -18,7 +18,7 @@ It is also important to note the units of Ether. The smallest unit of either is 
 
 Gas cost varies with the traffic of the network. Currently at the time of writing this (8/22/18) - the current minimum gas cost is 3.7 Gwei. Where 1 Gwei is one billionth of 1 Ether. So for example, to send one transaction at 21000 gas, where each gas unit costs 3.7 Gwei and at the current ether price of $277 - the transaction will cost roughly $0.21. 
 
-## Gas Limit vs Gas Price
+### Gas Limit vs Gas Price
 
 When sending a transaction through a tool like MetaMask you have the option to change the values of Gas Limit and Gas Price. 
 
