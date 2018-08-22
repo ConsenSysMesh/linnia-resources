@@ -1,6 +1,6 @@
 # Getting started
 
-Interacting with the linnia requires a connection to the Ethereum network and a storage solution of your choice. If you follow this tutorial, you will be able to use the library to store files in IPFS, a decentralized storage solution that the Linnia team strongly recommends.
+Interacting with the linnia requires a connection to the Ethereum network and a storage solution of your choice. If you follow this tutorial, you will be able to use the library to store files in either IPFS, a decentralized storage solution, or AWS S3.
 
 #### Choosing an Ethereum Network to Use
 
@@ -71,12 +71,12 @@ If you wish to use Infura to connect to IPFS, congratulations, you are already d
 You can just use the Infura url when connecting, like so:
 
 ```javascript
-const IPFS = require('ipfs-api')
+const IPFS = require('ipfs-api');
 const ipfs = new IPFS({
   host: 'ipfs.infura.io',
   port: 5001,
   protocol: 'https'
-})
+});
 ```
 
 To install it locally, head over to the [IPFS install page](https://ipfs.io/docs/install/) and download the binary. Once done, run:
@@ -91,3 +91,62 @@ Then, to start the service, run:
 ipfs init
 ipfs daemon
 ```
+
+#### Storing files on AWS S3
+
+[S3](https://aws.amazon.com/s3/) is a popular cloud storage service provided by Amazon Web services. Unlike IPFS, we do not have the option to run a node locally. To use it, we need to [sign up for an AWS account](https://aws.amazon.com/free/). 
+
+Next, you will need to issue a pair of access keys for your application to use. You will need to create a pair of access keys. If you are unfamiliar with how to do this, the `Access Keys` section of [this page](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html).
+
+You will also need to create a bucket to put your files in. This can be done by following [this](https://docs.aws.amazon.com/AmazonS3/latest/gsg/CreatingABucket.html) tutorial.
+
+Once you have an account set up, you will need to install and configure the AWS JS SDK. Instructions for how to do so can be found [here](https://aws.amazon.com/sdk-for-node-js/).
+
+Now, you should be able to get started coding!
+
+You can import the sdk and instantiate an S3 client instance like so:
+
+```javascript
+const AWS = require('aws-sdk');
+
+const s3 = new AWS.S3({ region: YOUR_ACOUNT_REGION });
+```
+
+Next, you can form your `object` to put into S3:
+
+```javascript
+const params = {
+	Body: YOUR_ENCRYPTED_DATA, 
+	Bucket: YOUR_BUCKET_NAME, 
+	Key: dataHash, // the dataHash of your data
+	ServerSideEncryption: "AES256", // (optional): extra encryption at rest if you choose
+	ACL: 'public-read', // public read so anyone with decryption keys can read
+	Tagging: metaData // (optional): and metaData you wish to 
+};
+```
+And then put the object into S3:
+
+```javascript
+const response = await new Promise((resolve, reject) => {
+	s3.putObject(params, function(err, data) {
+	    err ? reject(err) : resolve(data);
+	});
+});
+```
+
+If the request is successful, you then form the dataUri and create the Linnia record:
+
+```javascript
+const dataUri = `https://${bucketName}.s3.amazonaws.com/${dataHash}`;
+
+await records.addRecord(dataHash, metaData, dataUri, {
+	from: OWNER_ADDRESS
+	gas: YOUR_GAS_LIMIT
+});
+```
+
+And you're all set!
+
+
+
+
