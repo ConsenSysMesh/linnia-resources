@@ -21,4 +21,4 @@ Ethereum smart contract *Events* act as logs during transaction execution. Ether
 
 The following is an example of a *Linnia* event recorded in etherscan.
 
-![linnia Event Etherscan](linniaEventEtherscan.png)
+![linnia Event Etherscan](./assets/linniaEventEtherscan.png)

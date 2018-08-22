@@ -1,4 +1,4 @@
-<img src="./linnia-logo.jpg" width="400" height="400" />
+<img src="./assets/linnia-logo.jpg" width="400" height="400" />
 
 This repository acts as your gateway into all things Linnia. Here, you can find libraries and components written in javascript that you can use to build your own Linnia-powered applications.
 
