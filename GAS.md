@@ -22,7 +22,7 @@ Gas cost varies with the traffic of the network. Currently at the time of writin
 
 The gas cost of a transaction, referencing again the transaction we used above ($ from A to B), is automatically estimated in tools like MetaMask. 
 
-<img src='./assets/gaslimit-normal.png' width='300' height='600'}/>
+<img src='./assets/gaslimit-normal.png' width='300' height='550'/>
 
 
 We have the option to send less gas than the estimate but if the gas provided is less than what is actually needed, we lose the gas we gave and the transaction fails. 
@@ -31,7 +31,7 @@ If we send more gas than what is needed in the transaction - the remainder is re
 
 We can increase the gas limit like so:
 
-<img src='./assets/gaslimit-more.png' width='300' height='600'}/>
+<img src='./assets/gaslimit-more.png' width='300' height='550'/>
 
 We can see in the above images how increasing the gas limit increases the transaction fee. In this case anything unused will be refunded back to us. That is not the case when altering gas price. 
 
@@ -39,7 +39,7 @@ We can see in the above images how increasing the gas limit increases the transa
 
 For the most part, if we are not in a rush to process our transaction, we can usually leave the gas price at the amount that was estimated. 
 
-<img src='./assets/gasprice-normal.png' width='300' height='600'}/>
+<img src='./assets/gasprice-normal.png' width='300' height='550'/>
 
 Alternatively, say we are in a rush because we are trying to send money to a website to buy tickets before anybody else!
 
@@ -47,7 +47,7 @@ In this case, we can increase the gas price we are willing to pay. Here the amou
 
 Example here:
 
-<img src='./assets/gasprice-more.png' width='300' height='600'}/>
+<img src='./assets/gasprice-more.png' width='300' height='550'/>
 
 
  
