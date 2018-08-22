@@ -2,7 +2,7 @@
 
 ### The EVM
 
-The Ethereum Virtual Machine (EVM) is a part of the software running the Ethereum protocol. This EVM is what executes smart contracts on every node in the network. This execution is not free for the miners/nodes because they spend a lot of money on electricity to do this. Therefore, for each transaction, a small amount of "gas" is needed to compensate the miners who end up processing your transaction. 
+The Ethereum Virtual Machine (EVM) is a part of the software running the Ethereum protocol. This EVM is what executes smart contracts on every node in the network. This execution is not free for the miners/nodes because they spend a lot of money on electricity to do this. Therefore for each transaction, a small amount of "gas" is needed to compensate the miners who end up processing your transaction. 
 
 ### Gas
 Gas is the unit of cost to successfully execute a transaction onto the Ethereum blockchain. 
@@ -14,13 +14,13 @@ For example:
 - To create a new contract it costs 32,000 gas
 - To save 1 MB to storage (31250 256-bit words) it costs 625000000 gas!
 
-It is also important to note the units of Ether. The smallest unit of either is Wei, where 1000000000000000000 equals 1 Ether. 
+It is also important to note the units of Ether. The smallest unit of either is Wei, where 1000000000000000000 Wei equal 1 Ether. 
 
-Gas cost varies with the traffic of the network. Currently at the time of writing this (8/22/18) - the current gas cost is 3.7 Gwei. Where 1 Gwei is one billionth of 1 Ether. So for example, to send one transaction at 21000 gas, where each gas cost 3.7 Gwei and at the current ether price of $277 - the transaction costs roughly $0.21. 
+Gas cost varies with the traffic of the network. Currently at the time of writing this (8/22/18) - the current gas cost is 3.7 Gwei. Where 1 Gwei is one billionth of 1 Ether. So for example, to send one transaction at 21000 gas, where each gas unit costs 3.7 Gwei and at the current ether price of $277 - the transaction will cost roughly $0.21. 
 
 ### Altering Gas Limit
 
-The gas cost of a transaction, referencing again the transaction we used above ($ from A to B), is automatically estimated in tools like MetaMask. 
+The gas limit of a transaction, referencing again the transaction we used above ($ from A to B), is automatically estimated in tools like MetaMask. 
 
 <img src='./assets/gaslimit-normal.png' width='300' height='550'/>
 
@@ -43,7 +43,7 @@ For the most part, if we are not in a rush to process our transaction, we can us
 
 Alternatively, say we are in a rush because we are trying to send money to a website to buy tickets before anybody else!
 
-In this case, we can increase the gas price we are willing to pay. Here the amount of gas used will remain the same but the amount you pay for it will increase. This higher transaction cost ultimately persuades miners to execute your transaction before others on the network and therefore increasing the speed of the transaction. In this case the extra money spent goes to the miner and is not refunded to the user. 
+In this case, we can increase the gas price we are willing to pay. Here the amount of gas used will remain the same but the amount you pay for it will increase. This higher transaction cost ultimately persuades miners to execute your transaction before others on the network and therefore increases the speed of the transaction. In this case the extra money spent goes to the miner and is not refunded to the user. 
 
 Example here:
 
