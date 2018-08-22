@@ -41,3 +41,7 @@ Linnia prides itself on being an open source protocol. We greatly appreciate any
 ## What Keys Linnia Uses?
 
 Go [HERE](KEYS.md) to read more about encryption patterns and how the Linnia Protocol uses them.
+
+## What is gas and how does it apply to transactions?
+
+Go [HERE](GAS.md) to to understand how gas works and how to use it in your Ethereum transactions.

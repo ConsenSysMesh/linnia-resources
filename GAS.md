@@ -5,7 +5,7 @@
 The Ethereum Virtual Machine (EVM) is a part of the software running the Ethereum protocol. This EVM is what executes smart contracts on every node in the network. This execution is not free for the miners/nodes because they spend a lot of money on electricity to do this. Therefore for each transaction, a small amount of "gas" is needed to compensate the miners who end up processing your transaction. 
 
 ### Gas
-Gas is the unit of cost to successfully execute a transaction onto the Ethereum blockchain. 
+Gas is the unit of cost to successfully execute a transaction onto the Ethereum blockchain. Certain functions automatically assigned fixed values in gas and the total amount of gas required to execute a transaction is calculated in this way. 
 
 For example:
 
@@ -16,11 +16,19 @@ For example:
 
 It is also important to note the units of Ether. The smallest unit of either is Wei, where 1000000000000000000 Wei equal 1 Ether. 
 
-Gas cost varies with the traffic of the network. Currently at the time of writing this (8/22/18) - the current gas cost is 3.7 Gwei. Where 1 Gwei is one billionth of 1 Ether. So for example, to send one transaction at 21000 gas, where each gas unit costs 3.7 Gwei and at the current ether price of $277 - the transaction will cost roughly $0.21. 
+Gas cost varies with the traffic of the network. Currently at the time of writing this (8/22/18) - the current minimum gas cost is 3.7 Gwei. Where 1 Gwei is one billionth of 1 Ether. So for example, to send one transaction at 21000 gas, where each gas unit costs 3.7 Gwei and at the current ether price of $277 - the transaction will cost roughly $0.21. 
+
+## Gas Limit vs Gas Price
+
+When sending a transaction through a tool like MetaMask you have the option to change the values of Gas Limit and Gas Price. 
+
+Gas Limit - This is how much gas you are willing to add to the transaction. Usually the estimate provided is sufficient but you can add or subtract depending on your wishes. A more detailed approach is in the Altering Gas Limit section. 
+
+Gas Price/Cost - This is the cost in GWei of each gas unit used in a transaction. This cost is set by the congestion of the network and varies. Altering it can be beneficial for some transations and this is explained in the Altering Gas Price section. 
 
 ### Altering Gas Limit
 
-The gas limit of a transaction, referencing again the transaction we used above ($ from A to B), is automatically estimated in tools like MetaMask. 
+Again the gas limit of a transaction is automatically estimated in tools like MetaMask. In the below picture we are referencing one of the transactions we used above ($ from A to B)
 
 <img src='./assets/gaslimit-normal.png' width='300' height='550'/>
 
