@@ -94,7 +94,9 @@ ipfs daemon
 
 #### Storing files on AWS S3
 
-[S3](https://aws.amazon.com/s3/) is a popular cloud storage service provided by Amazon Web services. Unlike IPFS, we do not have the option to run a node locally. To use it, we need to [sign up for an AWS account](https://aws.amazon.com/free/). 
+[S3](https://aws.amazon.com/s3/) is a popular cloud storage service provided by Amazon Web services. We recommend using IPFS or another decentralized storage solution in most use cases, since AWS infastructure will add a point of centralization to your application, but if you feel more comfortable developing with it, or if you want to use some of the services provided by AWS to interact with your records, it is completely acceptable to use it.
+
+Unlike IPFS, we do not have the option to run a node locally. To use it, we need to [sign up for an AWS account](https://aws.amazon.com/free/). 
 
 Next, you will need to issue a pair of access keys for your application to use. You will need to create a pair of access keys. If you are unfamiliar with how to do this, the `Access Keys` section of [this page](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html).
 
