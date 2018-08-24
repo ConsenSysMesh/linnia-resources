@@ -34,6 +34,10 @@ Want to take a deeper dive into what the Linnia Protocol is and what it stands f
 
 Getting started building blockchain technology is tough! As with any emerging technology, the tooling and documentation surrounding it is hard to grasp. But don't worry, we have you covered! Please consult our [starter guide](./GETTING_STARTED.md) to learn everything you need to get started!
 
+## Ethereum learning resources
+
+(ETHEREUM.md)
+
 ## Contributing
 
 Linnia prides itself on being an open source protocol. We greatly appreciate any contributions you can make to further the cause. Please reference our [contribution documentation](./CONTRIBUTING.md) before getting started!
