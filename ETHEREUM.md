@@ -1,4 +1,4 @@
-# Basics of ethereum
+# Basics of Ethereum
 
 [Ethereum world computer](https://www.youtube.com/watch?v=j23HnORQXvs)
 
