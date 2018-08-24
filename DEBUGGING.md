@@ -10,7 +10,7 @@ See: https://developers.google.com/web/tools/chrome-devtools/javascript/
 
 ## Debugging node
 
-The Node debugger allows you to debug node-based javascript.
+The nodejs debugger allows you to debug node-based javascript.
 
 See: https://nodejs.org/en/docs/guides/debugging-getting-started/
 
