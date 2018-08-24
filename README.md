@@ -22,6 +22,7 @@ Want to take a deeper dive into what the Linnia Protocol is and what it stands f
 | ----------------------------------------------------------------------------- | ------------------------------------------------------------------ |
 | [Linnia Smart Contracts](https://github.com/ConsenSys/Linnia-Smart-Contracts) | Home of the Linnia Protocol Smart Contracts                        |
 | [Linnia Box](https://github.com/ConsenSys/linnia-box)                         | React UI Starter Template that integrates smart contracts and IPFS |
+| [Linnia JSON File Generator](https://github.com/ConsenSys/linnia-json-file-generator) | Tool to help you generate fake data to upload when testing |
 
 #### Libraries
 
