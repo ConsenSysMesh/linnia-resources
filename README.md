@@ -37,7 +37,7 @@ Getting started building blockchain technology is tough! As with any emerging te
 
 ## Ethereum learning resources
 
-(ETHEREUM.md)
+[Ethereum resources](ETHEREUM.md)
 
 ## Contributing
 
