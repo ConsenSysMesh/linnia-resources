@@ -14,6 +14,12 @@ If you have any questions about how the protocol works or how to get started, th
 
 Want to take a deeper dive into what the Linnia Protocol is and what it stands for? Check out our [whitepaper](/introducing-linnia.pdf) or our [homepage](https://consensys.github.io/linnia-homepage/) for more context.
 
+## Metadata
+
+For every record, Linnia protocol stores Metadata. This Metadata is chosen by the provider or whoever upload the record. The Metadata is completly public and the [Linnia Server](https://github.com/ConsenSys/linnia-server) can be used to query the Metadata of the records in order to find specific data. In order to have the data more organized and easy to search we provide specifications on how to write Metadata for you records. Go [HERE](METADATA.md) to check the specs.
+
+
+
 ## Public Repositories
 
 #### Components
