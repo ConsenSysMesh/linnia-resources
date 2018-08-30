@@ -1,6 +1,6 @@
 # Getting started
 
-Interacting with the linnia requires a connection to the Ethereum network and a storage solution of your choice. If you follow this tutorial, you will be able to use the library to store files in either IPFS, a decentralized storage solution, or AWS S3.
+Interacting with the Linnia requires a connection to the Ethereum network and a storage solution of your choice. If you follow this tutorial, you will be able to use the library to store files in either IPFS, a decentralized storage solution, or AWS S3.
 
 #### Choosing an Ethereum Network to Use
 
@@ -41,7 +41,7 @@ let web3 = new Web3(new Web3.providers.HttpProvider('http://localhost:7545'))
 
 #### Ropsten Testnet
 
-The Ropsten Testnet is a clone of the Ethereum testnet that allows us to deploy and test out our decentralized applications with no risk before deploying them on the Ethereum Mainnet. The Linnia team has already deployed a version of the Linnia Protocol smart contracts on this Testnet, so if you choose to use it, you already have half of the work done for you. On the flip side, **all interactions with these contracts are liable to be wiped out at any moment if the Linnia team redeploys.**
+The Ropsten Testnet is a clone of the Ethereum Testnet that allows us to deploy and test out our decentralized applications with no risk before deploying them on the Ethereum Mainnet. The Linnia team has already deployed a version of the Linnia Protocol smart contracts on this Testnet, so if you choose to use it, you already have half of the work done for you. On the flip side, **all interactions with these contracts are liable to be wiped out at any moment if the Linnia team redeploys.**
 
 #### Registering for an Infura to connect to Ropsten
 
