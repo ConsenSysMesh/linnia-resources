@@ -6,9 +6,9 @@ The Linnia protocol stores Metadata for every record that is added to the protoc
 
 ## Example
 
-```
+```json
 {
-	"data_format": "json",
+    "data_format": "json",
     "encryption_scheme": "x25519-xsalsa20-poly1305",
     "encryption_public_key": "hQYhHJpzZH/tGhz1wtqSjkL17tJSnEEC4yVGyNTHNQY=",
     "linnia_js_version": "0.1.4",
