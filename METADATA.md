@@ -25,55 +25,13 @@ The Linnia protocol stores Metadata for every record that is added to the protoc
 
 The Metadata should be in JSON format and the following are the properties that should have:
 
-
-
-#### Data Format (data_format)
-
-Format of the data, it has to be one of the following:
-
-- json
-- csv
-- plain_text
-
-
-
-#### Encryption Scheme (encryption_scheme)
-
-Encryption Scheme used to encrypt the data
-
-
-
-#### Encryption Public Key (encryption_public_key)
-
-Encryption Public Key used to encrypt the data
-
-
-
-#### Linnia js Version (linnia_js_version)
-
-If the data was uploaded using Linnia js, this field will contain the version of the library used for compatibility reasons
-
-
-
-#### [*optional] Owner Name (owner_name)
-
-The name or identity of the owner. This field is completly optional
-
-
-
-#### Provider Name (provider_name)
-
-The name or identity of the data provider if it was not uploaded by the same owner
-
-
-
-#### Provider Ethereum Address (provider_ethereum_address)
-
-The Ethereum Address of the provider if it was not uploaded by the same owner
-
-
-
-#### Keywords (keywords)
-
-An array of as much keywords as you want in order to be able to search
-
+| property                  | type          | options                     | required |                                                              |
+| ------------------------- | ------------- | --------------------------- | -------- | ------------------------------------------------------------ |
+| data_format               | string        | 'json'   'csv' 'plain_text' | Yes      | Format of the data                                           |
+| encryption_scheme         | string        |                             | Yes      | Encryption Scheme used to encrypt the data                   |
+| encryption_public_key     | string        |                             | Yes      | Encryption Public Key used to encrypt the data               |
+| linnia_js_version         | string        |                             | Yes      | If the data was uploaded using Linnia js, this field will contain the version of the library used for compatibility reasons |
+| owner_name                | string        |                             | No       | The name or identity of the owner                            |
+| provider_name             | string        |                             | No       | The name or identity of the data provider if it was not uploaded by the same owner |
+| provider_ethereum_address | address       |                             | Yes      | The Ethereum Address of the provider if it was not uploaded by the same owner |
+| keywords                  | array<string> |                             | Yes      | An array of keywords in order to be able to search           |
