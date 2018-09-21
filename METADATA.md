@@ -28,7 +28,6 @@ The following specifications are recommended by the Linnia Team.
     "encryptionScheme": "x25519-xsalsa20-poly1305",
     "encryptionPublicKey": "hQYhHJpzZH/tGhz1wtqSjkL17tJSnEEC4yVGyNTHNQY=",
     "linniajsVersion": "0.1.4",
-    "ownerName": "John Linnia",
     "providerName": "Facebook",
     "providerEthereumAddress": "0x349e31e92027f86b0ffeb5cd5e07003c7f229872",
     "keywords": [ "facebook", "friends list", "people" ],
@@ -49,7 +48,6 @@ The Metadata should be in JSON format and the following are the properties that 
 | encryptionScheme        | string        |                             | Encryption Scheme used to encrypt the data                   |
 | encryptionPublicKey     | string        |                             | Encryption Public Key used to encrypt the data               |
 | linniajsVersion         | string        |                             | If the data was uploaded using Linnia js, this field will contain the version of the library used for compatibility reasons |
-| ownerName               | string        |                             | The name or identity of the owner                            |
 | providerName            | string        |                             | The name or identity of the data provider if it was not uploaded by the same owner |
 | providerEthereumAddress | address       |                             | The Ethereum Address of the provider if it was not uploaded by the same owner |
 | keywords                | array[string] |                             | An array of keywords in order to be able to search           |
