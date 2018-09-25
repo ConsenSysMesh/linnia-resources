@@ -16,19 +16,17 @@ Want to take a deeper dive into what the Linnia Protocol is and what it stands f
 
 ## Metadata
 
-For every record, Linnia protocol stores Metadata. This Metadata is chosen by the provider or whoever upload the record. The Metadata is completly public and the [Linnia Server](https://github.com/ConsenSys/linnia-server) can be used to query the Metadata of the records in order to find specific data. In order to have the data more organized and easy to search we provide specifications on how to write Metadata for you records. Go [HERE](METADATA.md) to check the specs.
-
-
+For every record, Linnia protocol stores Metadata. This Metadata is chosen by the provider or whoever upload the record. The Metadata is completly public and the [Linnia Server] can be used to query the Metadata of the records in order to find specific data. In order to have the data more organized and easy to search we provide specifications on how to write Metadata for you records. Go [HERE](METADATA.md) to check the specs.
 
 ## Public Repositories
 
 #### Components
 
-| Repository                                                                    | Description                                                        |
-| ----------------------------------------------------------------------------- | ------------------------------------------------------------------ |
-| [Linnia Smart Contracts](https://github.com/ConsenSys/Linnia-Smart-Contracts) | Home of the Linnia Protocol Smart Contracts                        |
-| [Linnia Box](https://github.com/ConsenSys/linnia-box)                         | React UI Starter Template that integrates smart contracts and IPFS |
-| [Linnia JSON File Generator](https://github.com/ConsenSys/linnia-json-file-generator) | Tool to help you generate fake data to upload when testing |
+| Repository                                                                            | Description                                                        |
+| ------------------------------------------------------------------------------------- | ------------------------------------------------------------------ |
+| [Linnia Smart Contracts](https://github.com/ConsenSys/Linnia-Smart-Contracts)         | Home of the Linnia Protocol Smart Contracts                        |
+| [Linnia Box](https://github.com/ConsenSys/linnia-box)                                 | React UI Starter Template that integrates smart contracts and IPFS |
+| [Linnia JSON File Generator](https://github.com/ConsenSys/linnia-json-file-generator) | Tool to help you generate fake data to upload when testing         |
 
 #### Libraries
 
