@@ -9,10 +9,10 @@ Gas is the unit of cost to successfully execute a transaction onto the Ethereum 
 
 For example:
 
-- To simply send one transaction ($ from A to B) it costs 21000 gas
-- To compare two integers it costs 3 gas
-- To create a new contract it costs 32,000 gas
-- To save 1 MB to storage (31250 256-bit words) it costs 625000000 gas!
+- To simply send one transaction ($ from A to B) costs 21000 gas
+- To compare two integers costs 3 gas
+- To create a new contract costs 32,000 gas
+- To save 1 MB to storage (31250 256-bit words) costs 625000000 gas!
 
 It is also important to note the units of Ether. The smallest unit of either is Wei, where 1000000000000000000 Wei equal 1 Ether. 
 
