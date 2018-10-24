@@ -31,6 +31,7 @@ The following specifications are recommended by the Linnia Team.
     "providerName": "Facebook",
     "providerEthereumAddress": "0x349e31e92027f86b0ffeb5cd5e07003c7f229872",
     "keywords": [ "facebook", "friends list", "people" ],
+    "timeframe": "2018-06-07T10:30,2018-06-08T10:30"
 }
 ```
 
@@ -51,3 +52,4 @@ The Metadata should be in JSON format and the following are the properties that 
 | providerName            | string        |                             | The name or identity of the data provider if it was not uploaded by the same owner |
 | providerEthereumAddress | address       |                             | The Ethereum Address of the provider if it was not uploaded by the same owner |
 | keywords                | array[string] |                             | An array of keywords in order to be able to search           |
+| timeframe               | comma separated ISO 8601 strings |          | Two comma separated ISO 8601 that represent the timeframe in which the record is relevant
