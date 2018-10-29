@@ -39,6 +39,9 @@ For every record, Linnia protocol stores Metadata. This Metadata is chosen by th
 
 Getting started building blockchain technology is tough! As with any emerging technology, the tooling and documentation surrounding it is hard to grasp. But don't worry, we have you covered! Please consult our [starter guide](./GETTING_STARTED.md) to learn everything you need to get started!
 
+## Linnia Protocol Tools FAQs
+Go [HERE](LINNIA_PROTOCOL_TOOLS_FAQS.md) to read about the relation between the Linnia Protocol and the tools being built around it.
+
 ## Ethereum learning resources
 
 [Ethereum resources](ETHEREUM.md)
