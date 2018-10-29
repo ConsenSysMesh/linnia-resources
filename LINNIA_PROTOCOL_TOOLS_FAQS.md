@@ -1,3 +1,5 @@
+<img src="./assets/linnia-logo.jpg" width="400" height="400" />
+
 # Linnia Protocol Tools FAQs
 
 ### Explaining the Linnia Protocol and the tools being built around it.
