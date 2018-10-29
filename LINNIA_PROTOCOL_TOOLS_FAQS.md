@@ -1,6 +1,6 @@
 # Linnia Protocol Tools FAQs
 
-## Explaining the Linnia Protocol and the tools being built around it.
+### Explaining the Linnia Protocol and the tools being built around it.
 
 ## List of Questions:
 1. [What is the Linnia Protocol?](#1-what-is-the-linnia-protocol)
