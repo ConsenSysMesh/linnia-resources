@@ -47,7 +47,7 @@ Getting started building blockchain technology is tough! As with any emerging te
 
 Linnia prides itself on being an open source protocol. We greatly appreciate any contributions you can make to further the cause. Please reference our [contribution documentation](./CONTRIBUTING.md) before getting started!
 
-## What Keys Linnia Uses?
+## Which Encryption Patterns are Used by Linnia?
 
 Go [HERE](KEYS.md) to read more about encryption patterns and how the Linnia Protocol uses them.
 
