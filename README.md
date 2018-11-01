@@ -28,6 +28,13 @@ For every record, Linnia protocol stores Metadata. This Metadata is chosen by th
 | [Linnia Box](https://github.com/ConsenSys/linnia-box)                                 | React UI Starter Template that integrates smart contracts and IPFS |
 | [Linnia JSON File Generator](https://github.com/ConsenSys/linnia-json-file-generator) | Tool to help you generate fake data to upload when testing         |
 
+#### Examples
+
+| Repository                                                                            | Description                                                        |
+| ------------------------------------------------------------------------------------- | ------------------------------------------------------------------ |
+|linnia-example-policy (https://github.com/ConsenSys/linnia-example-policyr)|Example of a policy used for policy based permissions |
+|linnia-json-validator (https://github.com/ConsenSys/linnia-json-validator)| linnia-json-validator to be used for IRIS score oracles |
+
 #### Libraries
 
 | Repository                                                                         | NPM                                                                                                                                                     | Description                                     |
